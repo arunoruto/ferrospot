@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv
+.pytest_cache/
+.ruff_cache/
+
+# devenv
+.devenv*
+devenv.local.nix
+.direnv
+.pre-commit-config.yaml
+
+# Dashboard notes, local test images and `ferrospot run` output stay out
+# of the repo.
+ferrospot-notes/
+data/
+results/
+
+# Research-specific material stays local (published-figure configs, their
+# results and figures).
+regression/
+tests/test_regression.py
+docs/regression.md
+docs/calibration_results.md
+docs/img/
+configs/
+calibration*/
