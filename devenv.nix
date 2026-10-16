@@ -15,6 +15,12 @@
     dashboard.exec = ''uv run ferrospot-dashboard "$@"'';
   };
 
+  # https://devenv.sh/tasks/
+  tasks = {
+    "docs:build".exec = "uv run sphinx-build -b html docs docs/_build/html";
+    "docs:strict".exec = "uv run sphinx-build -b html -W --keep-going docs docs/_build/html";
+  };
+
   enterShell = ''
     git --version
     if [ ! -L "$DEVENV_ROOT/.venv" ]; then
@@ -32,6 +38,7 @@
         groups = [
           "test"
           "lint"
+          "docs"
         ];
         extras = [
           "dashboard"

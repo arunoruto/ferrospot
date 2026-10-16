@@ -46,6 +46,15 @@ ferrospot-dashboard = "ferrospot.dashboard:main"
 test = ["pytest>=8"]
 # Pinned: new ruff versions enable new rules by default.
 lint = ["ruff>=0.16.8,<0.17"]
+docs = [
+    "sphinx>=8.1",
+    "myst-parser>=4.0",
+    "pydata-sphinx-theme>=0.16",
+    "sphinx-autoapi>=3.6",
+    "sphinx-autodoc-typehints>=3.0",
+    "sphinx-copybutton>=0.5",
+    "sphinxcontrib-bibtex>=2.6",
+]
 
 [tool.uv]
 package = true

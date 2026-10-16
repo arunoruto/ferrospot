@@ -28,3 +28,9 @@ docs/calibration_results.md
 docs/img/
 configs/
 calibration*/
+
+# Sphinx output
+docs/_build/
+
+# Downloaded papers stay local
+papers/
