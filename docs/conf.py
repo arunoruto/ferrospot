@@ -54,12 +54,18 @@ intersphinx_mapping = {
     "skimage": ("https://scikit-image.org/docs/stable/", None),
 }
 
-html_theme = "pydata_sphinx_theme"
+html_theme = "shibuya"
+html_title = "ferrospot"
 html_static_path = ["_static"]
-html_css_files = ["css/darkmode-image.css"]
 html_theme_options = {
+    "accent_color": "orange",
     "github_url": "https://github.com/arunoruto/ferrospot",
-    "show_toc_level": 2,
+}
+# "Edit this page" and repository links (docs in /docs/ on main).
+html_context = {
+    "source_type": "github",
+    "source_user": "arunoruto",
+    "source_repo": "ferrospot",
 }
 
 
